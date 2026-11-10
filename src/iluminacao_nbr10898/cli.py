@@ -172,6 +172,7 @@ def main(argv: Optional[list[str]] = None) -> int:
         description="Dimensionamento de iluminação de emergência e balizamento conforme ABNT NBR 10898:2013.",
     )
     parser.add_argument("--versao", action="version", version=f"%(prog)s {VERSAO}")
+    parser.add_argument("--ajuda", action="help", help="Exibe esta mensagem de ajuda e encerra.")
 
     subparsers = parser.add_subparsers(dest="comando", help="Comandos disponíveis")
 
