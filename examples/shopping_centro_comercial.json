@@ -1,0 +1,44 @@
+{
+  "nome_edificacao": "Shopping Boulevard Metropolitano",
+  "tipo_sistema": "bloco_autonomo",
+  "autonomia_horas": 2,
+  "circuitos": [],
+  "ambientes": [
+    {
+      "nome": "Mall Principal e Corredores de Lojas",
+      "tipo_ambiente": "circulacao_horizontal",
+      "area_m2": 850,
+      "comprimento_rota_m": 120,
+      "pe_direito_m": "4.5",
+      "altura_montagem_m": "4.0",
+      "portas_saida_emergencia": 6,
+      "mudancas_direcao": 3,
+      "modelo_aclaramento": "luminaria_led_1200lm",
+      "reflexao_clara": true
+    },
+    {
+      "nome": "Praça de Alimentação e Refeitório",
+      "tipo_ambiente": "sala_escritorio",
+      "area_m2": 600,
+      "comprimento_rota_m": 45,
+      "pe_direito_m": "4.0",
+      "altura_montagem_m": "3.8",
+      "portas_saida_emergencia": 4,
+      "mudancas_direcao": 2,
+      "modelo_aclaramento": "luminaria_led_600lm",
+      "reflexao_clara": true
+    },
+    {
+      "nome": "Escadas Rolantes e Desníveis de Acesso",
+      "tipo_ambiente": "escada_ou_desnivel",
+      "area_m2": 90,
+      "comprimento_rota_m": 35,
+      "pe_direito_m": "3.5",
+      "altura_montagem_m": "3.0",
+      "portas_saida_emergencia": 2,
+      "mudancas_direcao": 2,
+      "modelo_aclaramento": "bloco_led_250lm",
+      "reflexao_clara": true
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dimensionamento-iluminacao-emergencia-nbr10898"
+version = "1.0.0"
+description = "Motor de dimensionamento de sistemas de iluminação de emergência e balizamento conforme ABNT NBR 10898:2013 em Python puro com aritmética exata Zero Float."
+readme = "README.md"
+authors = [{ name = "LOFRANO TECNOLOGIA", email = "contato@lofranotecnologia.com.br" }]
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Manufacturing",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering",
+    "Typing :: Typed",
+]
+keywords = [
+    "engenharia-de-seguranca",
+    "nbr10898",
+    "iluminacao-de-emergencia",
+    "aclaramento",
+    "balizamento",
+    "rotas-de-fuga",
+    "baterias-vrla",
+    "queda-de-tensao",
+    "zero-float",
+    "abnt",
+]
+
+[project.scripts]
+iluminacao-nbr10898 = "iluminacao_nbr10898.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+iluminacao_nbr10898 = ["py.typed"]

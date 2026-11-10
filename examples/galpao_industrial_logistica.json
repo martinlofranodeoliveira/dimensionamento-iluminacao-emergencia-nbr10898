@@ -1,0 +1,39 @@
+{
+  "nome_edificacao": "Centro Logístico e Armazenagem Anhanguera",
+  "tipo_sistema": "centralizado_baterias",
+  "autonomia_horas": 2,
+  "circuitos": [
+    {
+      "nome": "Circuito Força e Balizamento - Armazém Geral",
+      "comprimento_total_m": 120,
+      "secao_condutor_mm2": "4.0",
+      "tensao_vcc": 24
+    }
+  ],
+  "ambientes": [
+    {
+      "nome": "Galpão de Estocagem e Corredores de Empilhadeiras",
+      "tipo_ambiente": "galpao_deposito",
+      "area_m2": 1800,
+      "comprimento_rota_m": 150,
+      "pe_direito_m": "7.5",
+      "altura_montagem_m": "5.0",
+      "portas_saida_emergencia": 6,
+      "mudancas_direcao": 4,
+      "modelo_aclaramento": "farol_duplo_led_2400lm",
+      "reflexao_clara": false
+    },
+    {
+      "nome": "Subestação e Sala de Transformadores",
+      "tipo_ambiente": "area_risco_elevado",
+      "area_m2": 80,
+      "comprimento_rota_m": 20,
+      "pe_direito_m": "4.0",
+      "altura_montagem_m": "3.5",
+      "portas_saida_emergencia": 2,
+      "mudancas_direcao": 1,
+      "modelo_aclaramento": "luminaria_led_600lm",
+      "reflexao_clara": false
+    }
+  ]
+}

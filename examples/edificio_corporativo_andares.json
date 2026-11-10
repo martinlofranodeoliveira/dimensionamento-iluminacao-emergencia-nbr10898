@@ -1,0 +1,57 @@
+{
+  "nome_edificacao": "Edifício Corporativo Faria Lima Prime",
+  "tipo_sistema": "centralizado_baterias",
+  "autonomia_horas": 2,
+  "circuitos": [
+    {
+      "nome": "Circuito 1 - Pavimentos Tipo e Corredores",
+      "comprimento_total_m": 75,
+      "secao_condutor_mm2": "2.5",
+      "tensao_vcc": 24
+    },
+    {
+      "nome": "Circuito 2 - Escadas Pressurizadas e Subsolos",
+      "comprimento_total_m": 90,
+      "secao_condutor_mm2": "2.5",
+      "tensao_vcc": 24
+    }
+  ],
+  "ambientes": [
+    {
+      "nome": "Hall de Elevadores e Circulação 1º ao 5º Andar",
+      "tipo_ambiente": "circulacao_horizontal",
+      "area_m2": 240,
+      "comprimento_rota_m": 60,
+      "pe_direito_m": "2.8",
+      "altura_montagem_m": "2.8",
+      "portas_saida_emergencia": 3,
+      "mudancas_direcao": 2,
+      "modelo_aclaramento": "bloco_led_250lm",
+      "reflexao_clara": true
+    },
+    {
+      "nome": "Escada Enclausurada de Segurança",
+      "tipo_ambiente": "escada_ou_desnivel",
+      "area_m2": 60,
+      "comprimento_rota_m": 30,
+      "pe_direito_m": "2.8",
+      "altura_montagem_m": "2.6",
+      "portas_saida_emergencia": 2,
+      "mudancas_direcao": 4,
+      "modelo_aclaramento": "bloco_led_250lm",
+      "reflexao_clara": true
+    },
+    {
+      "nome": "Salas Corporativas Integradas",
+      "tipo_ambiente": "sala_escritorio",
+      "area_m2": 400,
+      "comprimento_rota_m": 50,
+      "pe_direito_m": "3.0",
+      "altura_montagem_m": "2.8",
+      "portas_saida_emergencia": 2,
+      "mudancas_direcao": 1,
+      "modelo_aclaramento": "luminaria_led_600lm",
+      "reflexao_clara": true
+    }
+  ]
+}
