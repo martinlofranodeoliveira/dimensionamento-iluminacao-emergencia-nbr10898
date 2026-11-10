@@ -11,6 +11,11 @@ import sqlite3
 import sys
 from fractions import Fraction
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
+
 
 def verificar_arquivo(caminho_json: str) -> None:
     print(f"[AUDITORIA] Verificando arquivo: {os.path.basename(caminho_json)}")
@@ -73,7 +78,7 @@ def verificar_arquivo(caminho_json: str) -> None:
         d_max = 4.0 * h_mont
         assert fluxo_req > 0, f"Fluxo requerido inválido para {nome}"
         assert d_max > 0, f"Espaçamento máximo inválido para {nome}"
-        print(f"  ✓ {nome[:28]:28s} | Tipo: {tipo[:15]:15s} | Emin: {emin} lux | Fluxo Req: {fluxo_req:.1f} lm | d_max: {d_max:.1f} m")
+        print(f"  [OK] {nome[:28]:28s} | Tipo: {tipo[:15]:15s} | Emin: {emin} lux | Fluxo Req: {fluxo_req:.1f} lm | d_max: {d_max:.1f} m")
 
     # Verificar circuitos elétricos se houver
     circuitos = dados.get("circuitos", [])
@@ -93,7 +98,7 @@ def verificar_arquivo(caminho_json: str) -> None:
                 float(c["secao_condutor_mm2"]),
                 float(c.get("tensao_vcc", 24.0)),
             ))
-            print(f"  ✓ Circuito: {c['nome']} | Comp: {c['comprimento_total_m']}m | Seção: {c['secao_condutor_mm2']}mm²")
+            print(f"  [OK] Circuito: {c['nome']} | Comp: {c['comprimento_total_m']}m | Seção: {c['secao_condutor_mm2']}mm²")
 
     conn.close()
     print(f"  [SUCESSO] Auditoria de {os.path.basename(caminho_json)} aprovada 100%!\n")
